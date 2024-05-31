@@ -19,7 +19,7 @@ NOTE: If you're considering using `LevelDB` for a fresh project,
   - On the other hand, `LevelDB` has builtin compression and it is less painful whenever using `mmap` becomes an issue.
 
 
-## Install `LevelDB.jl`
+## Install `LevelDB2.jl`
 
 ```julia
 ] add https://github.com/sadit/LevelDB2.jl
