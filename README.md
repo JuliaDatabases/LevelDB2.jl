@@ -1,6 +1,6 @@
 # LevelDB2
-[![CI](https://github.com/sadit/LevelDB.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/sadit/LevelDB.jl/actions/workflows/ci.yml)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://sadit.github.io/LevelDB.jl)
+[![CI](https://github.com/sadit/LevelDB2.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/sadit/LevelDB2.jl/actions/workflows/ci.yml)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://sadit.github.io/LevelDB2.jl)
 
 `LevelDB` is Google's open source on-disk key-value storage library that
 provides an ordered mapping from string keys to binary values. In many
