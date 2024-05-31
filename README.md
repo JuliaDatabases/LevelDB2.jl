@@ -1,4 +1,4 @@
-# LevelDB
+# LevelDB2
 [![CI](https://github.com/sadit/LevelDB.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/sadit/LevelDB.jl/actions/workflows/ci.yml)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://sadit.github.io/LevelDB.jl)
 
@@ -9,8 +9,8 @@ alternative than databases. LevelDB was written in C++ with a C calling API
 included. This module provides a Julia interface to LevelDB using the `LevelDB_jll` and Julia's
 `ccall` mechanism.
 
-This package is based on the [`LevelDB`](https://github.com/jerryzhenleicai/LevelDB.jl) package.
-The main difference is the use of `LevelDB_jll` and the use of Strings and any kind of Arrays as key and values.
+This package is based on the [`LevelDB`](https://github.com/jerryzhenleicai/LevelDB.jl) package, but now using
+`LevelDB_jll` and the use of Strings and any kind of Arrays as key and values.
 More over, the API was made more explicit to be able to handle different data types.
 It mantains the dictionary interface for one key operations.
 
@@ -22,19 +22,19 @@ NOTE: If you're considering using `LevelDB` for a fresh project,
 ## Install `LevelDB.jl`
 
 ```julia
-] add https://github.com/sadit/LevelDB.jl
+] add https://github.com/sadit/LevelDB2.jl
 ```
 
 ## Run Testing Code
 
 ```julia
-] test LevelDB
+] test LevelDB2
 ```
 
 ## Using 
 
 ```
-using LevelDB
+using LevelDB2
 ```
 
 ```julia
@@ -82,7 +82,7 @@ Delete a key from `db`.
 
 ## Batches
 
-`LevelDB` supports grouping a number of put operations into a write batch, the
+`LevelDB2` supports grouping a number of put operations into a write batch, the
 batch will either succeed as a whole or fail altogether, behaving like an atomic
 update.
 
@@ -129,6 +129,9 @@ Iterate over a range defined by a prefix
 
 ## Authors
 - Eric S. Tellez (donsadit@gmail.com)
+
+previous version (`LevelDB.jl`)
+
 - Jerry Zhenlei Cai ( jpenguin at gmail dot com )
 - Guido Kraemer
 - `@huwenshuo`

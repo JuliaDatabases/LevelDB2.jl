@@ -1,4 +1,4 @@
-module LevelDB
+module LevelDB2
 
 using LevelDB_jll
 export DB, Range, Prefix, put!, put_batch!, fetch, fetch_batch, del!, del_batch!

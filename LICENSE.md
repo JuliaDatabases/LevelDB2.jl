@@ -1,5 +1,6 @@
-The LevelDB.jl package is licensed under the MIT "Expat" License:
+The LevelDB2.jl package is licensed under the MIT "Expat" License:
 
+> Copyright (c) 2024: Eric S. Tellez.
 > Copyright (c) 2019: Jerry Cai, Guido Kraemer.
 >
 > Permission is hereby granted, free of charge, to any person obtaining

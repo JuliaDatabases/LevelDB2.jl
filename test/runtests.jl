@@ -1,5 +1,5 @@
 using Test
-using LevelDB
+using LevelDB2
 
 Path = mktempdir(prefix="LevelDB-tests", cleanup=!Sys.iswindows())  # seems to fail in windows
 
@@ -8,7 +8,7 @@ Path = mktempdir(prefix="LevelDB-tests", cleanup=!Sys.iswindows())  # seems to f
     @show dbname
     @test_throws ArgumentError DB(dbname)
 
-    db = LevelDB.DB(dbname, Vector{UInt8}, Vector{UInt8}, create_if_missing = true)
+    db = LevelDB2.DB(dbname, Vector{UInt8}, Vector{UInt8}, create_if_missing = true)
     close(db)
     @test !isopen(db)
 
@@ -31,7 +31,7 @@ end
 
 @testset "DB basic operations - String" begin
     dbname = joinpath(Path, "L.db.1")
-    @test_throws ArgumentError LevelDB.DB(dbname)
+    @test_throws ArgumentError LevelDB2.DB(dbname)
 
     db = DB(dbname, create_if_missing = true)
     db["hola"] = "mundo!"
